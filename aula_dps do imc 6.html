@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+    <script>
+        function pulaLinha() {
+         document.write("<br>");
+        }
+
+        function mostra(frase) {
+         document.write(frase);
+         pulaLinha();
+        }
+
+        function calculaImc(altura, peso) {
+        return peso / (altura * altura);
+        }
+
+    var numeroEscolhido =Math.round(Math.random() * 10);
+     console.log(numeroEscolhido);
+    var chute = parseInt(prompt("Escolha um numero: "));
+
+        if(chute == numeroEscolhido){
+         mostra("Parabens ! Você acertou.");
+        }
+    
+        else{
+         mostra("Você errou, o numero escolhido foi: " + numeroEscolhido);   
+        }    
+
+    </script>

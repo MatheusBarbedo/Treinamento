@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+    <script>
+        function pulaLinha() {
+         document.write("<br>");
+        }
+
+        function mostra(frase) {
+         document.write(frase);
+         pulaLinha();
+        }
+
+        function calculaImc(altura, peso) {
+        return imc = peso / (altura * altura);
+        
+}
+
+    var imcMatheus = calculaImc(1.78, 64);
+    var imcMae = calculaImc(1.60, 70);
+    var imcTotal = imcMatheus + imcMae;
+
+        mostra("o IMC de matheus foi: " + Math.round(imcMatheus));
+        mostra("o IMC da mae de matheus foi: " + Math.round(imcMae));
+        mostra("A soma do IMC de matheus e de sua mae foi: " + Math.round(imcTotal));
+
+    </script>

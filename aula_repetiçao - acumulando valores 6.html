@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<input/>
+<button> Aperte aqui ! </button>
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }   
+
+    function mostra(frase) {
+
+        document.write(frase);
+            pulaLinha();
+    }
+
+        var caixa = document.querySelector("input");
+        var numeroAleatorio = Math.round(Math.random() * 10);
+        caixa.focus();
+
+    function verifica(){
+
+        if(caixa.value == numeroAleatorio){
+            alert("Você acertou !");
+        }
+
+        else{
+            alert("Você errou !");
+        }
+
+        caixa.value = "";
+        caixa.focus();
+    }
+    
+    var botao = document.querySelector("button");
+    botao.onclick = verifica;
+
+</script>
+

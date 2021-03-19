@@ -1,0 +1,79 @@
+<meta charset="UTF-8">
+
+<h1><alert>BEM VINDO AI CINELOGICA</alert></h1>
+<alert>Aqui nos temos varios filmes de 1 a 6</alert>
+<br>
+<alert>Escolha um numero de 1 a 6 para escolher um de nossos filmes e receber mais informaçoes sobre ele.</alert>
+<br>
+<br>
+<input/>
+<button> Clique aqui. </button>
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");
+    }   
+
+    function mostra(frase) {
+        document.write(frase);
+            pulaLinha();
+    }
+
+    var caixa = document.querySelector("input");
+    var filmes = ["a", "b", "c", "d", "e", "f"];
+    
+            
+        function verifica(){    
+
+            var indice = parseInt(caixa.value);
+                console.log(filmes[indice - 1]);
+
+            if(filmes[indice - 1] == "a"){
+                mostra("Você escolheu o filme: " + filmes[indice - 1]);
+                mostra("As sessões disponiveis para este filme é entre as 10 as 12h");
+                mostra("Para maiores de 18 anos o valor do ingresso é: R$: 12,00");
+                mostra("Para menores de 18 anos o valor do ingresso é: R$: 6,00");
+            }
+
+            if(filmes[indice - 1] == "b"){
+                mostra("Você escolheu o filme: " + filmes[indice - 1]);
+                mostra("As sessões disponiveis para este filme é entre as 12h as 14h");
+                mostra("Para maiores de 18 anos o valor do ingresso é: R$: 12,00");
+                mostra("Para menores de 18 anos o valor do ingresso é: R$: 6,00");
+            }
+
+            if(filmes[indice - 1] == "c"){
+                mostra("Você escolheu o filme: " + filmes[indice - 1]);
+                mostra("As sessões disponiveis para este filme é entre as 14 as 16h");
+                mostra("Para maiores de 18 anos o valor do ingresso é: R$: 12,00");
+                mostra("Para menores de 18 anos o valor do ingresso é: R$: 6,00");
+            }
+
+            if(filmes[indice - 1] == "d"){
+                mostra("Você escolheu o filme: " + filmes[indice - 1]);
+                mostra("As sessões disponiveis para este filme é entre as 16h as 18h");
+                mostra("Para maiores de 18 anos o valor do ingresso é: R$: 12,00");
+                mostra("Para menores de 18 anos o valor do ingresso é: R$: 6,00");
+            }
+
+            if(filmes[indice - 1] == "e"){
+                mostra("Você escolheu o filme: " + filmes[indice - 1]);
+                mostra("As sessões disponiveis para este filme é entre as 18h as 20h");
+                mostra("Para maiores de 18 anos o valor do ingresso é: R$: 12,00");
+                mostra("Para menores de 18 anos o valor do ingresso é: R$: 6,00");
+            }
+
+            if(filmes[indice - 1] == "f"){
+                mostra("Você escolheu o filme: " + filmes[indice - 1]);
+                mostra("As sessões disponiveis para este filme é entre as 20h as 22h");
+                mostra("Para maiores de 18 anos o valor do ingresso é: R$: 12,00");
+                mostra("Para menores de 18 anos o valor do ingresso é: R$: 6,00");
+            }                        
+        }      
+
+    var botao = document.querySelector("button");
+    botao.onclick = verifica;
+
+</script>

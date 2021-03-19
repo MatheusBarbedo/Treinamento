@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<input/>
+<button> Aperte aqui ! </button>
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }   
+
+    function mostra(frase) {
+
+        document.write(frase);
+            pulaLinha();
+    }
+
+        var caixa = document.querySelector("input");
+        var numeroAleatorio = "A";
+        
+
+    function verifica(){
+
+        if(caixa.value >= 18){
+            alert("Você acertou !");
+        }
+
+        else{
+            alert("Você errou !");
+        }
+    }
+    
+    var botao = document.querySelector("button");
+    botao.onclick = verifica;
+
+</script>
+
